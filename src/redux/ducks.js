@@ -4,15 +4,19 @@ import {fetchProducts} from "./thunks";
 
 
 export const initialState = {
-    products : ReduxUtils.getAsyncSlice( ),
+    products : ReduxUtils.getAsyncSlice(),
+    cart: []
 };
 
-export const products = createSlice({
+export const productsSlice = createSlice({
     name: "products",
     initialState,
     reducers: {
         resetState: (state) => {
             state.products = initialState.products;
+        },
+        addToCart : (state, item) =>{
+            state.cart = state.cart.push(item)
         }
     },
     extraReducers : (builder) => {
@@ -33,4 +37,6 @@ export const products = createSlice({
     },
 });
 
-export default products.reducer;
+export const { resetState , addToCart } = productsSlice.actions
+
+export default productsSlice.reducer;

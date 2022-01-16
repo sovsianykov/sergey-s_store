@@ -1,20 +1,100 @@
 {
   "products": [
-    { "id": 1, "title": "item1", "img": "https://i.pinimg.com/736x/af/fe/92/affe9240c9b48026465072dafc6c35e5.jpg" },
-    { "id": 2, "title": "item2", "img": "https://i.pinimg.com/736x/6d/a3/97/6da397234e765b3faf456a0890e12950.jpg" },
-    { "id": 3, "title": "item3", "img": "https://pinoyhousedesigns.com/wp-content/uploads/2020/11/IM-01-25.jpg" },
-    { "id": 4, "title": "item4", "img": "https://i.ytimg.com/vi/QFGVJMO9AOc/maxresdefault.jpg" },
-    { "id": 5, "title": "item5", "img": "https://i.ytimg.com/vi/-Pf2A9ZPTn0/maxresdefault.jpg" },
-    { "id": 6, "title": "item6", "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMRfYNmt33P7ftGcQYotCPTmlNOrB2dKhIAl19e4PEoFyNBTkqxVUmD5ouAUlbteGIyHE&usqp=CAU" },
-    { "id": 7, "title": "item7", "img": "https://i.pinimg.com/736x/51/31/dc/5131dcf871e5e5fdf755aa1eb719d149--interiordesign-modern-homes.jpg" },
-    { "id": 8, "title": "item8", "img": "https://www.architectureartdesigns.com/wp-content/uploads/2015/03/129.jpg" },
-    { "id": 9, "title": "item9", "img": "http://www.architectureartdesigns.com/wp-content/uploads/2015/03/108-630x468.jpg" },
-    { "id": 10, "title": "item10", "img": "https://i.pinimg.com/originals/88/8a/8c/888a8c34591c48dbb062716aebc66e11.jpg" },
-    { "id": 11, "title": "item11", "img": "https://2.bp.blogspot.com/--HYvd42nTbM/T5Rdm4lGJfI/AAAAAAAALjg/LkELubU4McA/s1600/Modern+small+homes+designs.+(3).jpg" },
-    { "id": 12, "title": "item12", "img": "http://3.bp.blogspot.com/-NH_57ojclPU/Tky6Zdhu8dI/AAAAAAAAALo/_4kr9eer2vQ/s1600/2009-09-modern-house-design-small-site-tight-budget-8.jpg" },
-    { "id": 13, "title": "item13", "img": "https://www.99homeplans.com/wp-content/uploads/2018/03/best-contemporary-house-design-90-small-double-storey-houses-plan.jpg" },
-    { "id": 14, "title": "item14", "img": "https://www.99homeplans.com/wp-content/uploads/2018/03/modern-two-story-house-floor-plans-40-traditional-indian-house-plan.jpg" },
-    { "id": 15, "title": "item15", "img": "https://www.99homeplans.com/wp-content/uploads/2017/12/modern-indian-house-design-with-3d-elevations-2-floor-traditional-home.jpg" },
-    { "id": 16, "title": "item16", "img": "https://3.bp.blogspot.com/-7TZ21vdN8GI/WRGsPB9sVAI/AAAAAAABBes/NqQhUdJxRNol7sZ61jy8Wh1yJAzqQ0BqwCLcB/s1600/cute-little-home-india.jpg" }
+    {
+      "id": 1,
+      "title": "item1",
+      "price": 35000,
+      "img": "https://i.pinimg.com/736x/af/fe/92/affe9240c9b48026465072dafc6c35e5.jpg"
+    },
+    {
+      "id": 2,
+      "title": "item2",
+      "price": 89000,
+      "img": "https://i.pinimg.com/736x/6d/a3/97/6da397234e765b3faf456a0890e12950.jpg"
+    },
+    {
+      "id": 3,
+      "title": "item3",
+      "price": 85000,
+      "img": "https://pinoyhousedesigns.com/wp-content/uploads/2020/11/IM-01-25.jpg"
+    },
+    {
+      "id": 4,
+      "title": "item4",
+      "price": 735000,
+      "img": "https://i.ytimg.com/vi/QFGVJMO9AOc/maxresdefault.jpg"
+    },
+    {
+      "id": 5,
+      "title": "item5",
+      "price": 735000,
+      "img": "https://i.ytimg.com/vi/-Pf2A9ZPTn0/maxresdefault.jpg"
+    },
+    {
+      "id": 6,
+      "title": "item6",
+      "price": 375000,
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMRfYNmt33P7ftGcQYotCPTmlNOrB2dKhIAl19e4PEoFyNBTkqxVUmD5ouAUlbteGIyHE&usqp=CAU"
+    },
+    {
+      "id": 7,
+      "title": "item7",
+      "price": 375000,
+      "img": "https://i.pinimg.com/736x/51/31/dc/5131dcf871e5e5fdf755aa1eb719d149--interiordesign-modern-homes.jpg"
+    },
+    {
+      "id": 8,
+      "title": "item8",
+      "price": 355000,
+      "img": "https://www.architectureartdesigns.com/wp-content/uploads/2015/03/129.jpg"
+    },
+    {
+      "id": 9,
+      "title": "item9",
+      "price": 345000,
+      "img": "http://www.architectureartdesigns.com/wp-content/uploads/2015/03/108-630x468.jpg"
+    },
+    {
+      "id": 10,
+      "title": "item10",
+      "price": 95000,
+      "img": "https://i.pinimg.com/originals/88/8a/8c/888a8c34591c48dbb062716aebc66e11.jpg"
+    },
+    {
+      "id": 11,
+      "title": "item11",
+      "price": 85000,
+      "img": "https://2.bp.blogspot.com/--HYvd42nTbM/T5Rdm4lGJfI/AAAAAAAALjg/LkELubU4McA/s1600/Modern+small+homes+designs.+(3).jpg"
+    },
+    {
+      "id": 12,
+      "title": "item12",
+      "price": 75000,
+      "img": "http://3.bp.blogspot.com/-NH_57ojclPU/Tky6Zdhu8dI/AAAAAAAAALo/_4kr9eer2vQ/s1600/2009-09-modern-house-design-small-site-tight-budget-8.jpg"
+    },
+    {
+      "id": 13,
+      "title": "item13",
+      "price": 235000,
+      "img": "https://www.99homeplans.com/wp-content/uploads/2018/03/best-contemporary-house-design-90-small-double-storey-houses-plan.jpg"
+    },
+    {
+      "id": 14,
+      "title": "item14",
+      "price": 135000,
+      "img": "https://www.99homeplans.com/wp-content/uploads/2018/03/modern-two-story-house-floor-plans-40-traditional-indian-house-plan.jpg"
+    },
+    {
+      "id": 15,
+      "title": "item15",
+      "price": 135000,
+      "img": "https://www.99homeplans.com/wp-content/uploads/2017/12/modern-indian-house-design-with-3d-elevations-2-floor-traditional-home.jpg"
+    },
+    {
+      "id": 16,
+      "title": "item16",
+      "price": 535000,
+      "img": "https://3.bp.blogspot.com/-7TZ21vdN8GI/WRGsPB9sVAI/AAAAAAABBes/NqQhUdJxRNol7sZ61jy8Wh1yJAzqQ0BqwCLcB/s1600/cute-little-home-india.jpg"
+    }
   ]
 }
