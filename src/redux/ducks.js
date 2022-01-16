@@ -14,9 +14,13 @@ export const productsSlice = createSlice({
     reducers: {
         resetState: (state) => {
             state.products = initialState.products;
+            state.cart = [];
         },
-        addToCart : (state, item) =>{
-            state.cart = state.cart.push(item)
+        addToCart : (state, action) =>{
+            state.cart.push(action.payload)
+        },
+        removeFromCart : (state, action) =>{
+          state.cart = action.payload
         }
     },
     extraReducers : (builder) => {
@@ -37,6 +41,6 @@ export const productsSlice = createSlice({
     },
 });
 
-export const { resetState , addToCart } = productsSlice.actions
+export const { resetState , addToCart, removeFromCart  } = productsSlice.actions
 
 export default productsSlice.reducer;

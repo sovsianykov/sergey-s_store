@@ -10,8 +10,11 @@ import { ShoppingCart } from "@material-ui/icons";
 import brand from "../../assests/img/ghost.gif";
 import { Link, useLocation } from "react-router-dom";
 import useStyles from "./styles";
+import {useSelector} from "react-redux";
+import {selectCart} from "../../redux/selectors";
 
-function Navbar({ totalItems }) {
+function Navbar() {
+  const { cart } = useSelector(selectCart);
   const location = useLocation();
   const classes = useStyles();
 
@@ -43,7 +46,7 @@ function Navbar({ totalItems }) {
                 aria-label="Show cart items"
                 color="inherit"
               >
-                <Badge badgeContent={totalItems} color="secondary">
+                <Badge badgeContent={cart.length} color="secondary">
                   <ShoppingCart />
                 </Badge>
               </IconButton>

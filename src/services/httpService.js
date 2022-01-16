@@ -3,7 +3,7 @@ import axios from "axios";
 class HttpService {
     constructor() {
         const service = axios.create({
-            baseURL: 'http://localhost:3000/products'
+            baseURL: 'http://localhost:3000/products?_page=1&_limit=8'
 ,
             headers: {'X-Custom-Header': 'foobar'}
 
