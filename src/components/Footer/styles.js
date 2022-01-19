@@ -1,15 +1,17 @@
 import { makeStyles } from "@material-ui/core/styles";
 
-const drawerWidth = 0;
-
 export default makeStyles((theme) => ({
-  appBar: {
+  footerBar: {
+    width:"100%",
+    position: "fixed",
+    bottom: 0,
+    left: 0,
     boxShadow: "none",
     borderBottom: "1px solid rgba(0, 0, 0, 0.12)",
-    [theme.breakpoints.up("sm")]: {
-      width: `calc(100% - ${drawerWidth}px)`,
-      marginLeft: drawerWidth,
-    },
+    background: "#e3e3e3",
+    display: "flex",
+    justifyContent: "center",
+    alignItems:"baseline"
   },
   title: {
     flexGrow: 1,

@@ -11,3 +11,18 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+li, a {
+  text-decoration: none;
+  letter-spacing: .09rem;
+  color: #026565;
+  font-weight: 600;
+  transition: .2s ease-in-out;
+}
+
+a:hover {
+  color: #288b8b;
+  letter-spacing: .12rem;
+
+
+}

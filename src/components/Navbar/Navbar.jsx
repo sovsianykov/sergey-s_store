@@ -4,23 +4,23 @@ import {
   Toolbar,
   IconButton,
   Badge,
-  Typography,
+  Typography, Box,
 } from "@material-ui/core";
 import { ShoppingCart } from "@material-ui/icons";
 import brand from "../../assests/img/ghost.gif";
-import { Link, useLocation } from "react-router-dom";
+import { Link , useLocation} from "react-router-dom";
 import useStyles from "./styles";
-import {useSelector} from "react-redux";
-import {selectCart} from "../../redux/selectors";
+import { useSelector } from "react-redux";
+import { selectCart } from "../../redux/selectors";
+import NavigationMenu from "../NavigationMenu/NavigationMenu";
 
 function Navbar() {
   const { cart } = useSelector(selectCart);
-  const location = useLocation();
   const classes = useStyles();
 
   return (
     <>
-      <AppBar position="fixed" className={classes.appBar} color="inherit">
+      <AppBar position="fixed" className={classes.appBar} color="default">
         <Toolbar>
           <Typography
             component={Link}
@@ -38,8 +38,9 @@ function Navbar() {
             Sergey's Shop
           </Typography>
           <div className={classes.grow} />
-          {location.pathname === "/" && (
-            <div className={classes.button}>
+          <NavigationMenu />
+          {
+            <Box>
               <IconButton
                 component={Link}
                 to="/cart"
@@ -50,8 +51,8 @@ function Navbar() {
                   <ShoppingCart />
                 </Badge>
               </IconButton>
-            </div>
-          )}
+            </Box>
+          }
         </Toolbar>
       </AppBar>
     </>
