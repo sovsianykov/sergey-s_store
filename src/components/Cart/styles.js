@@ -26,4 +26,9 @@ export default makeStyles((theme) => ({
         width: '100%',
         justifyContent: 'space-between',
     },
+    emptyCard : {
+
+        marginTop: '10%',
+
+    },
 }));

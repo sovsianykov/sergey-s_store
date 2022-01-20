@@ -10,12 +10,15 @@ import {
 import useStyles from "./styles";
 import {memo, useCallback} from "react";
 
-const CartItem = ({ item, onRemoveFromCard}) => {
+const CartItem = ({ item, onRemoveFromCard, onUpdateCartQty }) => {
   const classes = useStyles();
 
   const removeFromCartHandler = useCallback(() =>{
       onRemoveFromCard(item.id)
   },[item.id, onRemoveFromCard])
+  const onUpdateCartQtyHandler = useCallback((id,q) =>{
+    onUpdateCartQty(id,q)
+  },[onUpdateCartQty])
   return (
     <Card>
       <CardMedia image={item.img} alt={item.name} className={classes.media} />
@@ -28,15 +31,15 @@ const CartItem = ({ item, onRemoveFromCard}) => {
           <Button
             type="button"
             size="small"
-            // onClick={() => onUpdateCartQty(item.id, item.quantity - 1)}
+            onClick={() => onUpdateCartQtyHandler(item.id, item.quantity - 1)}
           >
             -
           </Button>
-          <Typography></Typography>
+          <Typography>{item.quantity}</Typography>
           <Button
             type="button"
             size="small"
-            // onClick={() => onUpdateCartQty(item.id, item.quantity + 1)}
+             onClick={() => onUpdateCartQtyHandler(item.id, item.quantity + 1)}
           >
             +
           </Button>

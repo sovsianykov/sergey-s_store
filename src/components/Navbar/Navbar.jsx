@@ -8,14 +8,14 @@ import {
 } from "@material-ui/core";
 import { ShoppingCart } from "@material-ui/icons";
 import brand from "../../assests/img/ghost.gif";
-import { Link , useLocation} from "react-router-dom";
+import { Link } from "react-router-dom";
 import useStyles from "./styles";
 import { useSelector } from "react-redux";
 import { selectCart } from "../../redux/selectors";
 import NavigationMenu from "../NavigationMenu/NavigationMenu";
 
 function Navbar() {
-  const { cart } = useSelector(selectCart);
+  const {cart}  = useSelector(selectCart);
   const classes = useStyles();
 
   return (

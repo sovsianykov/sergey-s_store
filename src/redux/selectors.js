@@ -15,10 +15,12 @@ export const selectAllProducts = createSelector(
 export const selectCart = createSelector(
   (state) => state.productsSlice.cart,
   (cart) => {
-    const totalSum = cart.reduce((acc, house) => acc + house.price, 0);
+      let sortedCart = [];
+    const totalSum = cart.reduce((acc, house) => acc + house.price*house.quantity, 0);
 
     return {
-      cart,
+        cart,
+       sortedCart,
       totalSum,
     };
   }

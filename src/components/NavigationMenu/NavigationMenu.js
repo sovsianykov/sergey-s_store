@@ -16,7 +16,7 @@ const navItems = [
   { id: 1, label: "Houses", path: "/" },
   { id: 2, label: "About", path: "/about" },
   { id: 3, label: "Cart", path: "/cart" },
-  { id: 4, label: "Order", path: "/checkout" },
+  { id: 4, label: "Order", path: "/order" },
 ];
 
 const NavigationMenu = () => {
