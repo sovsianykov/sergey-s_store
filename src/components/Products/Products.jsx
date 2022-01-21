@@ -1,11 +1,11 @@
-import React, {useCallback} from "react";
+import React, {memo, useCallback} from "react";
 import {Box, CircularProgress, Grid} from "@material-ui/core";
 import Product from "./Product.";
 import useStyles from "../Products/productsStyles";
 import {useDispatch, useSelector} from "react-redux";
 import useFetch from "../../hooks/useFetch";
 import {selectAllProducts} from "../../redux/selectors";
-import {addToCart, removeFromCart} from "../../redux/ducks";
+import {addToCart} from "../../redux/ducks";
 
 const Products = () => {
   const classes = useStyles();
@@ -37,4 +37,4 @@ const Products = () => {
   );
 };
 
-export default Products;
+export default memo(Products);

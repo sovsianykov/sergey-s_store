@@ -1,4 +1,4 @@
-import React from "react";
+import React, {memo} from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import NavigationMenuItem from "./NavigationMenuItem";
 
@@ -33,4 +33,4 @@ const NavigationMenu = () => {
   );
 };
 
-export default NavigationMenu;
+export default memo(NavigationMenu);

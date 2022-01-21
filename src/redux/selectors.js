@@ -4,7 +4,6 @@ export const selectAllProducts = createSelector(
   (state) => state.productsSlice.products,
   (products) => {
     const { data, isLoading, error } = products;
-      console.log(data)
     return {
       houses: data,
       isLoading,
